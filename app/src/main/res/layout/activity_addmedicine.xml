@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add827"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/food_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Medicine name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine doze"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/doze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Medicine doze" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine color"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Medicine color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine time"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Medicine time"
+                    android:inputType="time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disease"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Disease" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start_date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <CalendarView
+                    android:id="@+id/startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="end_date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <CalendarView
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="periodically_intake"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/p_intake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="periodically intake number"
+                    android:inputType="time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="periodically_intake_time"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="enter periodically intake time"
+                    android:inputType="time" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="set Reminder" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
